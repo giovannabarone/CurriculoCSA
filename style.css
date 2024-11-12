@@ -1,0 +1,85 @@
+/* Estilos básicos para corpo e textos */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para o texto */
+    margin: 100; /* Define a margem em volta da página */
+    padding: 100; /* Define o espaçamento interno da página */
+    display: flex; /* Configura o layout flexível para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh; /* Garante que a altura do corpo ocupe 100% da altura da tela */
+    background-color: #f5f5f5; /* Define uma cor de fundo suave */
+}
+
+/* Estilo do container para centralizar o conteúdo */
+.container {
+    display: flex; /* Configura o container principal como flexível */
+    gap: 20px; /* Espaçamento entre o container esquerdo e direito */
+    padding: 20px; /* Espaçamento interno do container */
+    max-width: 800px; /* Define a largura máxima do container */
+    border: 2px solid lightgrey; /* Borda ao redor do container para efeito de folha */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+    background-color: white; /* Cor de fundo branca para o container */
+}
+
+/* Container esquerdo */
+.container-left {
+    flex: 0 0 33.33%; /* Define a largura do container esquerdo para 33.33% */
+    padding: 20px; /* Espaçamento interno do container esquerdo */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    background-color: #ebe8e8; /* Define uma cor de fundo clara */
+    border-radius: 20px; /* Arredonda os cantos do container esquerdo */
+    display: flex; /* Configura o layout flexível para alinhar conteúdo */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza a imagem e outros elementos horizontalmente */
+}
+
+/* Container direito */
+.container-right {
+    flex: 0 0 66.67%; /* Define a largura do container direito para 66.67% */
+    padding: 20px; /* Espaçamento interno do container direito */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+}
+
+.container-right header h1 {
+    text-align: center; /* Centraliza o título principal horizontalmente */
+}
+
+.container-right h2 {
+    font-size: 1.2em; /* Define o tamanho da fonte dos títulos */
+    color: #333; /* Define a cor do texto dos títulos */
+    margin-bottom: 5px; /* Espaçamento inferior para separar o título do texto */
+    padding-bottom: 5px; /* Espaçamento interno inferior no título */
+    border-bottom: 1px solid #CCA9DD; /* Linha divisória abaixo do título */
+}
+
+/* Estilo para as seções */
+section {
+    padding: 10px; /* Espaçamento interno das seções */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+/* Estilo para os títulos das seções */
+section h2 {
+    font-size: 1.2em; /* Tamanho da fonte para os títulos das seções */
+    margin-bottom: 5px; /* Espaço abaixo dos títulos das seções */
+}
+
+/* Estilo para os links */
+a {
+    color: #000; /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilo da imagem de perfil */
+.profile-pic {
+    width: 150px; /* Define a largura da imagem */
+    height: 150px; /* Define a altura da imagem */
+    border-radius: 50%; /* Deixa a imagem circular */
+    object-fit: cover; /* Ajusta a imagem dentro da borda, mantendo a proporção */
+    transition: border 0.1s ease; /* Animação suave para a borda ao passar o mouse */
+}
+
+/* Estilo ao passar o mouse sobre a imagem */
+.profile-pic:hover {
+    border: 3px solid #CCA9DD; /* Adiciona uma borda colorida quando o mouse passa por cima */
+}
